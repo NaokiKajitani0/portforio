@@ -1,0 +1,93 @@
+body{
+  padding: 64px;
+}
+h1{
+  margin: 0;
+  font-size: 22px;
+  line-height: 64px;
+}
+p{
+  margin: 0;
+}
+#open1,#close1,#open2,#close2,#open3,#close3{
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px 0;
+  margin: 12px auto 12px;
+}
+#mask{
+  background-color: rgba(0, 0, 0, .4);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+#educationcareer,#jobcareer,#others{
+  background-color: #fff;
+  width: 800px;
+  padding:60px;
+  border-radius: 4px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  transition: transform 0.4s;
+}
+#mask.hidden{
+  display: none;
+}
+#educationcareer.hidden,#jobcareer.hidden,#others.hidden{
+  display: none;
+}
+.menu{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.menu li a{
+  padding: 8px;
+  display: inline-block;
+  text-decoration: none;
+  width: 100px;
+  text-align: center;
+  color: #333;
+  border-radius: 4px 4px 0 0;
+}
+.menu li a.active{
+  background-color: #333;
+  color: #fff;
+}
+.menu li a:not(active):hover{
+  opacity: .5;
+  transition: opacity .4s;
+}
+.content.active{
+  background-color: #333;
+  color: #fff;
+  /* min-height: 150px; */
+  padding: 12px;
+  display: block;
+}
+.content{
+  display: none;
+}
+.return{
+  cursor: pointer;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  padding: 6px 0;
+  margin: 12px 0 12px;
+}
+.return a{
+  text-decoration: none;
+  color: #333;
+  display: block;
+}

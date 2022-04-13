@@ -1,0 +1,51 @@
+.error {
+    display: none; 
+  }
+  /* 隣接セレクタで
+   * input:invalidの隣の
+   * エラーメッセージは表示する
+   */
+  input:invalid + .error {
+    display: block;
+    color: red;
+    font-size: 0.9em;
+  }
+  .test{
+    white-space: pre-wrap;
+    border: 1px solid;
+    width: 220px;
+  }
+  th,td{
+    border: solid 1px;
+    padding: 25px;
+  }
+  th{
+    background-color: dimgrey;
+    color: white;
+  }
+  #canvas {
+    /*background: #000;*/
+    /*background: #FFF;*/
+    /*background: #C0C0C0;*/
+    background: #EEEEEE;
+  
+    /*position: relative;*/
+  }
+  .index-profile{
+    display: inline;
+  }
+  .return{
+    cursor: pointer;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    padding: 6px 0;
+    margin: 12px 0 12px;
+    
+  }
+  .return a{
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
